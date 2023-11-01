@@ -1,0 +1,20 @@
+name: PETIT_ICCV
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+dependencies:
+  - python=3.10
+  - seaborn
+  - numpy
+  - pandas
+  - tqdm
+  - hydra-core
+  - scipy
+  - ipykernel
+  - pillow
+  - p-tqdm
+  - omegaconf
+  - pytorch
+  - pytorch-cuda=11.7
+  - torchvision
