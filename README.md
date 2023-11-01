@@ -1,5 +1,5 @@
 # PETIT
-This repository contains the WACV 2024 code submission for the paper PETIT: Physically Enhanced Thermal Images Translating GAN. (paper ID 1891).
+This repository contains the WACV 2024 code submission for the paper PETIT: Physically Enhanced Thermal Images Translating GAN.
 Throughout the code/documentation, the term monochromatic and 9000nm are used interchangeably, as the 9000nm channel was the monochromatic thermal modality demonstrated in the paper.
 The code was tested on Python 3.10.6, with a Nvidia RTX 4070Ti GPU.
 
@@ -7,7 +7,7 @@ The code was tested on Python 3.10.6, with a Nvidia RTX 4070Ti GPU.
 - Install the required packages either using either:
     - conda (recommended): `conda env create -f environment.yml`.
     - pip : `pip install -r requirements.txt`.
-- Download the data and pretrained models from [here](https://drive.google.com/file/d/1NSGDsGx9hN9mQgEMI9y57v2VtyODDE7e/view?usp=sharing)
+- Download the data and pretrained models from [here](https://drive.google.com/drive/folders/1gOGpCNSU7I7FVLerbRtN9z9LpBuuq3WN?usp=sharing)
 - Extract the folders in the downloaded zip to the root directory of the repository.
 
 ## Train
