@@ -1,0 +1,14 @@
+In this mass, we propose a novel method that takes advantage of the unique physical properties of our data domain to improve the performance of a generative model in an unpaired inter-modal translation task. 
+Statistical analysis revealed a significant improvement in both performance and training consistency with our approach.
+In particular, the significant contribution to both performance and consistency appears to be due to the fusion of a calibrated physical estimator with a deep generative architecture. 
+This observation supports our hypothesis regarding the added value of a physically estimated prior information to a deep-generative model in generating more realistic outputs.
+The improved training consistency might also indicate that the physical prior guides the deep model's convergence toward flatter minima.
+
+As in every work, our study leaves room for improvement and further investigation.
+While sufficiently helpful for improving the deep estimator results, any improvement in the calibration process or in the physical modeling could potentially improve our physical estimator's prediction and provide the deep estimator with a better approximation of the desired output.
+Another issue that requires investigation is the redundancy of the intrinsic temperature in the absence of the physical estimator.
+
+Lastly, our method was designed to transform an image from the panchromatic modality, with a bandwidth of $7 - 14 \mu m$, to a monochromatic modality, with a central wavelength of $9\mu m$ and FWHM of $0.5 \mu m$.
+Thus, the bandpass region of our monochromatic modality is merely a fraction of the entire input's bandwidth.
+Our proposed method can be applied to transform our panchromatic data to several other monochromatic modalities as well.
+Furthermore, instead of a single monochromatic target modality, our approach could be extended to apply multi-modal translation, \ie, from panchromatic to several monochromatic modalities simultaneously, resulting in a multi-spectral transformation.

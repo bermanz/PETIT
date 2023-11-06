@@ -1,0 +1,118 @@
+% CVPR 2023 Paper Template
+% based on the CVPR template provided by Ming-Ming Cheng (https://github.com/MCG-NKU/CVPR_Template)
+% modified and extended by Stefan Roth (stefan.roth@NOSPAMtu-darmstadt.de)
+
+\documentclass[12pt, oneside, a4paper]{book}
+\usepackage[pagenumbers]{cvpr} % To force page numbers, e.g. for an arXiv version
+\setcounter{secnumdepth}{3}
+\setlength{\textheight}{8in}
+\setlength{\hoffset}{0.2in}
+\setlength{\textwidth}{6in}
+\setlength{\headsep}{0.5in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+
+%%%%%%%%% PAPER TYPE  - PLEASE UPDATE FOR FINAL VERSION
+
+% Include other packages here, before hyperref.
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{epsf}
+\usepackage{subcaption}
+\usepackage{placeins}
+\usepackage{paralist}
+\usepackage{newtxtext, newtxmath}
+\usepackage{setspace}
+% It is strongly recommended to use hyperref, especially for the review version.
+% hyperref with option pagebackref eases the reviewers' job.
+% Please disable hyperref *only* if you encounter grave issues, e.g. with the
+% file validation for the camera-ready version.
+%
+% If you comment hyperref and then uncomment it, you should delete
+% ReviewTempalte.aux before re-running LaTeX.
+% (Or just hit 'q' on the first LaTeX run, let it finish, and you
+%  should be clear).
+\usepackage[pagebackref,breaklinks,colorlinks]{hyperref}
+
+
+% Support for easy cross-referencing
+\usepackage[capitalize]{cleveref}
+\crefname{section}{Sec.}{Secs.}
+\Crefname{section}{Section}{Sections}
+\Crefname{table}{Table}{Tables}
+\crefname{table}{Tab.}{Tabs.}
+
+
+%%%%%%%%% PAPER ID  - PLEASE UPDATE
+\def\cvprPaperID{*****} % *** Enter the CVPR Paper ID here
+\def\confName{CVPR}
+\def\confYear{2023}
+
+
+\onehalfspacing
+
+\begin{document}
+\pagenumbering{gobble}
+
+%%%%%%%%% TITLE
+%------------------------------------------------------------------------
+\input{title.tex}
+{   
+    \noindent
+    \textbf{The results shown in this thesis have been submitted and are currently under review for the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2023.}
+
+}
+\input{acknowledgements.tex}
+
+%%%%%%%%% BODY TEXT
+%------------------------------------------------------------------------
+\cleardoublepage
+\pagenumbering{Roman}
+\input{abstract.tex}
+{
+    \hypersetup{linkcolor=black}
+    \tableofcontents
+    \cleardoublepage
+    \listoftables
+    \cleardoublepage
+    \listoffigures
+    \cleardoublepage
+}
+
+\pagenumbering{arabic}
+\chapter{Introduction}
+\label{sec:introduction}
+\input{introduction.tex}
+
+\chapter{Literature review}
+\label{sec:literature_review}
+\input{literature_review.tex}
+
+\chapter{Proposed method}
+\label{sec:methods}
+\input{methods.tex}
+
+\chapter{Data}
+\label{sec:data}
+\input{data.tex}
+
+\chapter{Experiments}
+\label{sec:experiments}
+\input{experiments.tex}
+
+\chapter{Summary and conclusions}
+\label{sec:conclusions}
+\input{conclusions.tex}
+
+%------------------------------------------------------------------------
+% \FloatBarrier
+\cleardoublepage
+%%%%%%%%% REFERENCES
+{\small
+\bibliographystyle{../ieee_fullname}
+\bibliography{../bib}
+}
+
+\end{document}

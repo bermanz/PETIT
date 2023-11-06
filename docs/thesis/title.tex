@@ -1,0 +1,47 @@
+
+\newcommand\blankpage{%
+    \newpage 
+    \null
+    \newpage
+}
+
+\def \Title {PETIT-GAN: Physically Enhanced Thermal Image-Translating Generative Adversarial Network}
+
+\def \Author {Omri Berman} %% Turn this on to generate a thesis document rather than the paper
+\def \SubmittionDate {January 2023}
+\def \makepagetitlebase
+{
+    \includegraphics[width=0.6\linewidth]{../figs/logos/TAU_logo.png}\\
+    \vspace{0.6cm}
+    {\Large The Iby and Aladar Fleischman Faculty of Engineering}\\
+    \vspace{0.3cm}
+    {\Large The Zandman-Slaner School of Graduate Studies}\\
+    \vspace{0.6cm}
+    {\huge \textbf{\Title} \par}
+    \vspace{0.6cm}
+    {\Large A thesis submitted toward the degree of \\ Master of Science in Electrical Engineering\par}
+    \vspace{0.6cm}
+    {\large by}\\
+    \vspace{0.3cm}
+    {\Large \textbf{\Author}}\\
+}
+
+\begin{titlepage}
+    \begin{center}
+        \makepagetitlebase
+        \vspace{1.2cm}        
+        {\large \SubmittionDate}
+        \afterpage{\blankpage}
+        \cleardoublepage
+        \makepagetitlebase
+        \vspace{0.6cm}
+        {\large This research was carried out in the School of Electrical Engineering}\\
+        \vspace{0.3cm}
+        {\large The Department of Electrical Engineering - Physical Electronics}\\
+        \vspace{0.3cm}
+        {\large Under the supervision of Prof. David Mendlovic and Dr. Iftach Klapp}\\                        
+        \vspace{1.2cm}        
+        {\large \SubmittionDate}
+        \afterpage{\blankpage}
+    \end{center}
+\end{titlepage}

@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage{pdfpages}
+\usepackage{afterpage}
+\begin{document}
+    \includepdf[pages=-]{main.pdf}
+    \pagenumbering{gobble}
+    \newpage 
+    \null
+    \newpage
+    \includepdf[pages=-]{abstract_hebrew.pdf}
+    \newpage 
+    \null
+    \newpage
+    \includepdf[pages=-]{heb_title_page.pdf}
+\end{document}

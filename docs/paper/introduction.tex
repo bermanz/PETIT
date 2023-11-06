@@ -1,0 +1,34 @@
+
+The emergence of nanosatellites has revolutionized the field of remote sensing, allowing to acquire ground images with higher spatial resolution and at lower costs.
+Many sensing systems involving nanosatellites are focused at the visible and near infrared spectrum (between 380-1400 nm) - MISC \cite{kalman2008misc} (between 380-700), Charybdis \cite{lowe2012charybdis} (between 412-870 nm) and SuperDOVE \cite{tu2022radiometric} (between 431-885 nm) to name a few.
+However, very little to no attention was given to the longwave-infrared (LWIR) spectrum (7000 - 14000 nm), \aka, the thermal spectrum, which plays a crucial role in various environmental aspects, such as climate and water monitoring, fires prediction, \etc.
+Identifying such phenomena requires thermal multispectral imaging, \ie, a collection of several image layers of the same scene where each layer is acquired at a particular wavelength band belonging to the thermal spectrum.
+Unfortunately, while panchromatic (wide-band) thermal images were relatively easy to obtain, no off-the-shelf high-resolution thermal multispectral images were available to develop proofs of concepts for those applications.
+To tackle this deficiency, we used a light-plane, a thermal camera and a set of infrared bandpass filters to collect and assemble an aerial thermal multispectral images dataset.
+Due to inherent setup limitations, the amount of collected images per spectral channel was limited.
+Moreover, images of different wavelengths were not spatially registered, which is essential for a complete multispectral dataset.
+To overcome both the sample size and registration issues, we developed an unpaired image to image translation algorithm to transform the relatively abundant panchromatic images into pixel-wise-aligned multispectral images.
+
+Image to image (I2I) translation is the task of transforming the style of an image to that of a different domain while preserving its content.
+Many methods have been developed to tackle this task, utilizing various deep neural architectures such as auto-encoders \cite{zhao2021unpaired}, generative adversarial networks (GANs) \cite{CycleGAN2017, park2020cut, zhao2020unpaired}, diffusion models \cite{DBLP:journals/corr/abs-2104-05358, saharia2022palette} and more.
+Those methods have countless applications and are being used for numerous purposes, such as synthetic dataset generation for learning tasks in fields such as autonomous cars \cite{https://doi.org/10.48550/arxiv.1812.01710, Dundar2018DomainSA}, medical imaging \cite{Thambawita_2022, chen2021synthetic}, \etc.
+In most cases, as in our problem, there are no pairs of content-equivalent images in the input and output domains.
+The I2I transformation in those cases is termed \emph{unpaired}.
+As the unpaired image-to-image (UI2I) translation task is unsupervised and highly ill-posed, those models are usually very hard to train.
+
+In contrast to other visual domains, thermal imaging has unique underlying physical properties that are shared across all thermal modalities.
+These properties enable the design of closed-form transformations between panchromatic and multispectral images. 
+In turn, those transformations can be embedded in deep UI2I architectures to improve their statistical performance and robustness.
+
+To test this novel hypothesis, we first train two different state-of-the-art (SOTA) GANs to perform thermal UI2I translation to establish a baseline.
+We then provide the generators with an additional physical property of the acquired images, allowing the GANs generator's output to be conditioned on that property.
+Finally, we design a physical estimator and fuse it with the generator, resulting in our proposed method, named a physically enhanced thermal image-translating (PETIT) GAN.
+
+Statistical analysis showed that our solution achieves an improvement of approximately $50\%$ compared to the SOTA GANs \wrt the conventional evaluation metrics.
+Furthermore, our method exhibits a more robust training procedure, possibly indicating convergence to flatter minima.
+These improvements are further demonstrated qualitatively through our method's greater visual fidelity to the desired target domain.
+
+Our paper's contribution is three-fold:
+(1) Application of UI2I between different thermal image modalities;
+(2) Development and utilization of an analytic-physical-UI2I translation model;
+(3) Introduction of a novel thermal aerial images dataset with unpaired images of different spectral bands.

@@ -1,0 +1,51 @@
+\ProvidesPackage{Ball}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%This Block can draw small Ball
+%Elementwise or reduction operations can be drawn with this
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tikzset{Ball/.pic={\tikzset{/sphere/.cd,#1}	 	
+
+\pgfmathsetmacro{\r}{\radius*0.2}
+\pgfmathsetmacro{\logoscale}{4*\r*\scale}
+\pgfmathsetmacro{\rsqrt}{\r * sqrt(3) / 2}
+\pgfmathsetmacro{\rdiv}{\r / 2}
+
+\shade[ball color=\fill,opacity=\opacity] (0,0,0) circle (\r);
+\draw (0,0,0) circle [radius=\r] node[scale=\logoscale] {\logo};
+
+\coordinate (\name-anchor) at ( 0 , 0  , 0) ;
+\coordinate (\name-east)   at ( \r, 0  , 0) ;
+\coordinate (\name-west)   at (-\r, 0  , 0) ;
+\coordinate (\name-north)  at ( 0 , \r , 0) ;
+\coordinate (\name-south)  at ( 0 , -\r, 0) ;
+
+% defined for connectivity
+\coordinate (\name-northeast)  at ( \rdiv , \rsqrt, 0) ;
+\coordinate (\name-northeast-over)  at ( \rdiv , \rsqrt + 1, 0) ;
+\coordinate (\name-northwest)  at ( -\rdiv , \rsqrt, 0) ;
+\coordinate (\name-northwest-over)  at ( -\rdiv , \rsqrt + 1, 0) ;
+
+
+\tikzstyle{captionlabel}=[text width=4cm,text centered]
+\path (\name-south) + (0,-20pt) coordinate (caption-node) 
+edge ["\textcolor{black}{\huge \caption}"', captionlabel] (caption-node); %Ball caption
+
+},
+/sphere/.search also={/tikz},
+/sphere/.cd,
+radius/.store       in=\radius,
+scale/.store        in=\scale,
+caption/.store      in=\caption,
+name/.store         in=\name,
+fill/.store         in=\fill,
+logo/.store         in=\logo,
+opacity/.store      in=\opacity,
+logo=$\Sigma$,
+fill=green,
+opacity=0.10,
+radius=0.5,
+caption=,
+name=,
+scale=,
+}

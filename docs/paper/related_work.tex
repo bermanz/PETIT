@@ -1,0 +1,31 @@
+GAN is a class of deep generative models, first introduced by Goodfellow \etal \cite{goodfellow2014generative}.
+Many improvements and extensions have been made in the field of GANs in the last few years, and many of these form the underlying principles and architecture of numerous SOTA models in several generative tasks.
+GANs are typically made up of two components: 
+(1) a generator, which samples random vectors from some predefined probability density function as inputs and transforms them into meaningful outputs of some target modality; 
+(2) a discriminator, which has access to both real images from the target modality and the generator's outputs, and needs to tell them apart.
+The generator and discriminator are trained in an adversarial fashion where one's improvement comes at the expense of the other's. 
+If successful, the training procedure converges when the generator and discriminator reach a Nash equilibrium \cite{goodfellow2014generative}.
+
+Among the various tasks performed by GANs is I2I translation, where the output is conditioned on an input image.
+I2I translation has a plethora of applications, such as image segmentation \cite{yang2018mri, li2020simplified}, pose estimation \cite{li2020manigan, fish2017adversarial}, colorization \cite{isola2017image, suarez2017infrared, zhang2017real}, super resolution \cite{yuan2018unsupervised, zhang2019multiple} and many more.
+The I2I translation task can be roughly classified into supervised I2I (paired I2I), where each image in the input domain has a content-aligned equivalent in the output domain, and unsupervised I2I (UI2I), where there are no content-equivalent pairs in the input and output domains.
+Most practical I2I tasks are performed in an unsupervised fashion, as fully registered pairs of images in two different modalities are extremely difficult to obtain.
+
+The great challenge in UI2I translation is that no ground truth is available as a reference for the transformed output.
+Thus, in contrast to paired I2I, pixel-level loss cannot be used to steer the training toward a better content-preserving solution.
+Therefore, content preservation of the transformation must be enforced by an alternative mechanism.
+The most popular strategy to ensure content preservation is to use cycle consistency \cite{Lee_2018_ECCV}.
+This approach relies on two translators: one from domain A to domain B ($G_{A \rightarrow B}$), and one in the opposite direction ($G_{B \rightarrow A}$). 
+In addition to the standard adversarial loss, a cycle-consistency loss is used to penalize for discrepancies between input $x_A$ and its reconstruction by the roundtrip transformation from A to B and then back to A:
+\begin{equation}
+    \mathcal{L}_{cyc} = \mathcal{L}\left( x_A, G_{B \rightarrow A} \left( G_{A \rightarrow B}(x_A) \right) \right)
+\end{equation}
+CycleGAN \cite{CycleGAN2017}, along with DiscoGAN \cite{kim2017learning} and DualGAN \cite{yi2017dualgan}, additionally impose cycle consistency over images originating in domain B, resulting in two simultaneous cyclic losses.
+
+While successfully eliminating the need for ground truth, cycle consistency inherently encourages the transformation to encode information about the input that serves solely for the purpose of cyclic reconstruction.
+This encoded information comes at the expense of fidelity to the target modality, which is clearly undesirable.
+In an attempt to eliminate the need for cycle consistency, several approaches have implemented a one-sided translation that manages to preserve content in a different fashion.
+Typically, this is done by embedding both input and target in some shared style-agnostic space. 
+The geometric distance between the embeddings is treated as a measure of content discrepancy, and then minimized to improve content preservation.
+Fu \etal \cite{fu2019geometry} encouraged preservation of the geometric relationship between an input and its geometrically transformed versions and their outputs. 
+Both F-LSeSim \cite{zheng2021spatially} and contrastive unpaired translation (CUT) \cite{park2020cut} used contrastive representation learning by maximizing the similarity between pairs of corresponding patches in the input and output, and minimizing it for non-matching patches.

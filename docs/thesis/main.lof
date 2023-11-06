@@ -1,0 +1,28 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Multispectral imaging . Each band encodes a different sort of information about the same scene \cite {stewart2020ultrafast}.}}{2}{figure.caption.6}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Overlap between receptive fields of nano-sattellites, each equipped with a different IR filter.}}{3}{figure.caption.7}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Schematics of a MLP ANN with 2 hidden layers \cite {dabbura_2022}.}}{6}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The architecture of a residual block \cite {He2016DeepRL}.}}{9}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Schematics of a typical GAN for generating human-like faces \cite {radhakrishna_2020}.}}{12}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Paired I2I samples of sketch-to-image translation (left) \emph {vs}\onedot unpaired I2I samples of image-to-painting translation (right) \cite {CycleGAN2017}.}}{14}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Schematic of the CycleGAN's architecture \cite {chandhok_2022}.}}{16}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces CycleGAN's exemplary results for different UI2I tasks \cite {CycleGAN2017}.}}{17}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Schematic of the patchwise contrastive loss calculation procedure \cite {park2020cut}.}}{18}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Planck's spectral radiance densities for different object temperatures \cite {enwiki:1128338285}.}}{20}{figure.caption.15}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The physical model-calibration setup. The black body target (d) is observed by the thermal camera (b) through a drilled aperture(c) at the edge of the environmental chamber (a). This setup enables controlling $T_\mathit {obj}$ and $T_\mathit {int}$ independently.}}{24}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces An example surface fit visualizing the calibrated polynomial coefficients of a single pixel.}}{26}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Surface fit visualizing the calibrated panchromatic polynomial coefficients for a randomly chosen pixel.}}{28}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Histogram of the estimation error incurred by the different measurement profiles.}}{29}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Comparison between the baseline (CycleGAN, CUT) and PETIT (our method) generators. The architectures of the encoder, bottleneck and decoder blocks are identical in all models.}}{34}{figure.caption.21}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The light airplane used for acquiring the thermal images.}}{35}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The design and the eventually manufactured jig for mounting the thermal camera on the light airplane's underbelly.}}{36}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces An illustration of a rectangular ground patch coverage by a raster trajectory}}{37}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces A thermal image of pure sea \emph {vs}\onedot an image of land for reference.}}{38}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The gradient maps of land and sea images. An additional gradient map of a sea image is provided for reference.}}{38}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces A $\ell _2$ norm histogram of the gradients of random sea and images taken from the dataset.}}{39}{figure.caption.27}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Qualitative comparison. (a) Panchromatic (Pan) input. (b) Baseline output. (c) PETIT output. (d) Real unpaired monochromatic image (Mono) for reference.}}{44}{figure.caption.29}%
+\addvspace {10\p@ }

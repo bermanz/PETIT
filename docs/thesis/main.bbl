@@ -1,0 +1,356 @@
+\begin{thebibliography}{10}\itemsep=-1pt
+
+\bibitem{ahmad2002p1}
+SP Ahmad, VV Salomonson, WL Barnes, X Xiong, GG Leptoukh, and GN Serafino.
+\newblock P1. 6 modis radiances and reflectances for earth system science studies and environmental applications.
+\newblock 2002.
+
+\bibitem{arjovsky2017wasserstein}
+Martin Arjovsky, Soumith Chintala, and L{\'e}on Bottou.
+\newblock Wasserstein generative adversarial networks.
+\newblock In {\em International conference on machine learning}, pages 214--223. PMLR, 2017.
+
+\bibitem{3320}
+A. Banskota, N. Kayastha, M.~J. Falkowski, M.~A. Wulder, R.~E. Froese, and J.~C. White.
+\newblock Forest monitoring using landsat time series data—a review.
+\newblock {\em Canadian Journal of Remote Sensing}, 40(5):362–384, 2014.
+
+\bibitem{bengio2013advances}
+Yoshua Bengio, Nicolas Boulanger-Lewandowski, and Razvan Pascanu.
+\newblock Advances in optimizing recurrent networks.
+\newblock In {\em 2013 IEEE international conference on acoustics, speech and signal processing}, pages 8624--8628. IEEE, 2013.
+
+\bibitem{article}
+R. Bhan, Raghvendra Saxena, C.R. Jalwania, and S.K. Lomash.
+\newblock Uncooled infrared microbolometer arrays and their characterisation techniques.
+\newblock {\em Defence Science Journal}, 59:580, 11 2009.
+
+\bibitem{https://doi.org/10.48550/arxiv.1812.01710}
+Sebastian Bujwid, Miquel Martí, Hossein Azizpour, and Alessandro Pieropan.
+\newblock Gantruth - an unpaired image-to-image translation method for driving scenarios, 2018.
+
+\bibitem{cauchy1847methode}
+Augustin Cauchy et~al.
+\newblock M{\'e}thode g{\'e}n{\'e}rale pour la r{\'e}solution des systemes d’{\'e}quations simultan{\'e}es.
+\newblock {\em Comp. Rend. Sci. Paris}, 25(1847):536--538, 1847.
+
+\bibitem{chandhok_2022}
+Shivam Chandhok.
+\newblock Cyclegan: Unpaired image-to-image translation (part 1), Sep 2022.
+
+\bibitem{chen2021synthetic}
+Richard~J Chen, Ming~Y Lu, Tiffany~Y Chen, Drew~FK Williamson, and Faisal Mahmood.
+\newblock Synthetic data in machine learning for medicine and healthcare.
+\newblock {\em Nature Biomedical Engineering}, 5(6):493--497, 2021.
+
+\bibitem{csiszar1975divergence}
+Imre Csisz{\'a}r.
+\newblock I-divergence geometry of probability distributions and minimization problems.
+\newblock {\em The annals of probability}, pages 146--158, 1975.
+
+\bibitem{dabbura_2022}
+Imad Dabbura.
+\newblock Coding neural network - forward propagation and backpropagtion, Sep 2022.
+
+\bibitem{5206848}
+Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, and Li Fei-Fei.
+\newblock Imagenet: A large-scale hierarchical image database.
+\newblock In {\em 2009 IEEE Conference on Computer Vision and Pattern Recognition}, pages 248--255, 2009.
+
+\bibitem{dhariwal2021diffusion}
+Prafulla Dhariwal and Alexander Nichol.
+\newblock Diffusion models beat gans on image synthesis.
+\newblock {\em Advances in Neural Information Processing Systems}, 34:8780--8794, 2021.
+
+\bibitem{dosovitskiy2020image}
+Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, et~al.
+\newblock An image is worth 16x16 words: Transformers for image recognition at scale.
+\newblock {\em arXiv preprint arXiv:2010.11929}, 2020.
+
+\bibitem{Dundar2018DomainSA}
+Aysegul Dundar, Ming-Yu Liu, Ting-Chun Wang, John Zedlewski, and Jan Kautz.
+\newblock Domain stylization: A strong, simple baseline for synthetic to real image domain adaptation.
+\newblock {\em ArXiv}, abs/1807.09384, 2018.
+
+\bibitem{fish2017adversarial}
+Hsiao-Yu Fish~Tung, Adam~W Harley, William Seto, and Katerina Fragkiadaki.
+\newblock Adversarial inverse graphics networks: Learning 2d-to-3d lifting and image-to-image translation from unpaired supervision.
+\newblock In {\em Proceedings of the IEEE International Conference on Computer Vision}, pages 4354--4362, 2017.
+
+\bibitem{fu2019geometry}
+Huan Fu, Mingming Gong, Chaohui Wang, Kayhan Batmanghelich, Kun Zhang, and Dacheng Tao.
+\newblock Geometry-consistent generative adversarial networks for one-sided unsupervised domain mapping.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages 2427--2436, 2019.
+
+\bibitem{Goodfellow-et-al-2016}
+Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
+\newblock {\em Deep Learning}.
+\newblock MIT Press, 2016.
+\newblock \url{http://www.deeplearningbook.org}.
+
+\bibitem{goodfellow2014generative}
+Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio.
+\newblock Generative adversarial nets.
+\newblock {\em Advances in neural information processing systems}, 27, 2014.
+
+\bibitem{DBLP:journals/corr/HeZRS15}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock {\em CoRR}, abs/1512.03385, 2015.
+
+\bibitem{He2016DeepRL}
+Kaiming He, X. Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock {\em 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, pages 770--778, 2016.
+
+\bibitem{DBLP:journals/corr/HeuselRUNKH17}
+Martin Heusel, Hubert Ramsauer, Thomas Unterthiner, Bernhard Nessler, G{\"{u}}nter Klambauer, and Sepp Hochreiter.
+\newblock Gans trained by a two time-scale update rule converge to a nash equilibrium.
+\newblock {\em CoRR}, abs/1706.08500, 2017.
+
+\bibitem{holman1989heat}
+Jack~Philip Holman.
+\newblock {\em Heat Transfer [SI Metric Ed.]}.
+\newblock McGraw-Hill, 1989.
+
+\bibitem{DBLP:journals/corr/IoffeS15}
+Sergey Ioffe and Christian Szegedy.
+\newblock Batch normalization: Accelerating deep network training by reducing internal covariate shift.
+\newblock {\em CoRR}, abs/1502.03167, 2015.
+
+\bibitem{isola2017image}
+Phillip Isola, Jun-Yan Zhu, Tinghui Zhou, and Alexei~A Efros.
+\newblock Image-to-image translation with conditional adversarial networks.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 1125--1134, 2017.
+
+\bibitem{kerekes2008spectral}
+John~P Kerekes, Kristin Strackerjan, and Carl Salvaggio.
+\newblock Spectral reflectance and emissivity of man-made surfaces contaminated with environmental effects.
+\newblock {\em Optical Engineering}, 47(10):106201, 2008.
+
+\bibitem{kim2019u}
+Junho Kim, Minjae Kim, Hyeonwoo Kang, and Kwanghee Lee.
+\newblock U-gat-it: Unsupervised generative attentional networks with adaptive layer-instance normalization for image-to-image translation.
+\newblock {\em arXiv preprint arXiv:1907.10830}, 2019.
+
+\bibitem{kim2017learning}
+Taeksoo Kim, Moonsu Cha, Hyunsoo Kim, Jung~Kwon Lee, and Jiwon Kim.
+\newblock Learning to discover cross-domain relations with generative adversarial networks.
+\newblock In {\em International conference on machine learning}, pages 1857--1865. PMLR, 2017.
+
+\bibitem{kingma2013auto}
+Diederik~P Kingma and Max Welling.
+\newblock Auto-encoding variational bayes.
+\newblock {\em arXiv preprint arXiv:1312.6114}, 2013.
+
+\bibitem{FundamentalsOfInfraredThermalImaging}
+Michael Vollmer~\& Klaus-PeterMöllmann.
+\newblock {\em Fundamentals of Infrared Thermal Imaging}, chapter~1, pages 1--106.
+\newblock John Wiley \& Sons, Ltd, 2017.
+
+\bibitem{10.5555/2999134.2999257}
+Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E. Hinton.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In {\em Proceedings of the 25th International Conference on Neural Information Processing Systems - Volume 1}, NIPS'12, page 1097–1105, Red Hook, NY, USA, 2012. Curran Associates Inc.
+
+\bibitem{lecun1995convolutional}
+Yann LeCun, Yoshua Bengio, et~al.
+\newblock Convolutional networks for images, speech, and time series.
+\newblock {\em The handbook of brain theory and neural networks}, 3361(10):1995, 1995.
+
+\bibitem{Lee_2018_ECCV}
+Hsin-Ying Lee, Hung-Yu Tseng, Jia-Bin Huang, Maneesh Singh, and Ming-Hsuan Yang.
+\newblock Diverse image-to-image translation via disentangled representations.
+\newblock In {\em Proceedings of the European Conference on Computer Vision (ECCV)}, September 2018.
+
+\bibitem{li2020manigan}
+Bowen Li, Xiaojuan Qi, Thomas Lukasiewicz, and Philip~HS Torr.
+\newblock Manigan: Text-guided image manipulation.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages 7880--7889, 2020.
+
+\bibitem{li2020simplified}
+Rui Li, Wenming Cao, Qianfen Jiao, Si Wu, and Hau-San Wong.
+\newblock Simplified unsupervised image translation for semantic segmentation adaptation.
+\newblock {\em Pattern Recognition}, 105:107343, 2020.
+
+\bibitem{liu2017unsupervised}
+Ming-Yu Liu, Thomas Breuel, and Jan Kautz.
+\newblock Unsupervised image-to-image translation networks.
+\newblock {\em Advances in neural information processing systems}, 30, 2017.
+
+\bibitem{mao2017least}
+Xudong Mao, Qing Li, Haoran Xie, Raymond~YK Lau, Zhen Wang, and Stephen Paul~Smolley.
+\newblock Least squares generative adversarial networks.
+\newblock In {\em Proceedings of the IEEE international conference on computer vision}, pages 2794--2802, 2017.
+
+\bibitem{mirza2014conditional}
+Mehdi Mirza and Simon Osindero.
+\newblock Conditional generative adversarial nets.
+\newblock {\em arXiv preprint arXiv:1411.1784}, 2014.
+
+\bibitem{naeem2020reliable}
+Muhammad~Ferjad Naeem, Seong~Joon Oh, Youngjung Uh, Yunjey Choi, and Jaejun Yoo.
+\newblock Reliable fidelity and diversity metrics for generative models.
+\newblock In {\em International Conference on Machine Learning}, pages 7176--7185. PMLR, 2020.
+
+\bibitem{nair2010rectified}
+Vinod Nair and Geoffrey~E Hinton.
+\newblock Rectified linear units improve restricted boltzmann machines.
+\newblock In {\em Icml}, 2010.
+
+\bibitem{10.1117/1.OE.52.6.061304}
+Paul~W. Nugent, Joseph~A. Shaw, and Nathan~J. Pust.
+\newblock {Correcting for focal-plane-array temperature dependence in microbolometer infrared cameras lacking thermal stabilization}.
+\newblock {\em Optical Engineering}, 52(6):1 -- 8, 2013.
+
+\bibitem{park2020cut}
+Taesung Park, Alexei~A. Efros, Richard Zhang, and Jun-Yan Zhu.
+\newblock Contrastive learning for unpaired image-to-image translation.
+\newblock In {\em European Conference on Computer Vision}, 2020.
+
+\bibitem{picard2021torch}
+David Picard.
+\newblock Torch. manual\_seed (3407) is all you need: On the influence of random seeds in deep learning architectures for computer vision.
+\newblock {\em arXiv preprint arXiv:2109.08203}, 2021.
+
+\bibitem{radhakrishna_2020}
+Gowri Radhakrishna.
+\newblock Generative adversarial networks in computer vision, May 2020.
+
+\bibitem{rezende2015variational}
+Danilo Rezende and Shakir Mohamed.
+\newblock Variational inference with normalizing flows.
+\newblock In {\em International conference on machine learning}, pages 1530--1538. PMLR, 2015.
+
+\bibitem{rosenblatt1957perceptron}
+Frank Rosenblatt.
+\newblock {\em The perceptron, a perceiving and recognizing automaton Project Para}.
+\newblock Cornell Aeronautical Laboratory, 1957.
+
+\bibitem{saharia2022palette}
+Chitwan Saharia, William Chan, Huiwen Chang, Chris Lee, Jonathan Ho, Tim Salimans, David Fleet, and Mohammad Norouzi.
+\newblock Palette: Image-to-image diffusion models.
+\newblock In {\em ACM SIGGRAPH 2022 Conference Proceedings}, pages 1--10, 2022.
+
+\bibitem{DBLP:journals/corr/abs-2104-05358}
+Hiroshi Sasaki, Chris~G. Willcocks, and Toby~P. Breckon.
+\newblock {UNIT-DDPM:} unpaired image translation with denoising diffusion probabilistic models.
+\newblock {\em CoRR}, abs/2104.05358, 2021.
+
+\bibitem{agronomy10050641}
+Joel Segarra, Maria~Luisa Buchaillot, Jose~Luis Araus, and Shawn~C. Kefauver.
+\newblock Remote sensing for precision agriculture: Sentinel-2 improved features and applications.
+\newblock {\em Agronomy}, 10(5), 2020.
+
+\bibitem{sohl2015deep}
+Jascha Sohl-Dickstein, Eric Weiss, Niru Maheswaranathan, and Surya Ganguli.
+\newblock Deep unsupervised learning using nonequilibrium thermodynamics.
+\newblock In {\em International Conference on Machine Learning}, pages 2256--2265. PMLR, 2015.
+
+\bibitem{article_LWIR}
+Richard Soref.
+\newblock Mid-infrared photonics in silicon and germanium.
+\newblock {\em Nature Photonics}, 4:495--497, 08 2010.
+
+\bibitem{stewart2020ultrafast}
+Jon~W Stewart, Jarrett~H Vella, Wei Li, Shanhui Fan, and Maiken~H Mikkelsen.
+\newblock Ultrafast pyroelectric photodetection with on-chip spectral filters.
+\newblock {\em Nature materials}, 19(2):158--162, 2020.
+
+\bibitem{suarez2017infrared}
+Patricia~L Su{\'a}rez, Angel~D Sappa, and Boris~X Vintimilla.
+\newblock Infrared image colorization based on a triplet dcgan architecture.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops}, pages 18--23, 2017.
+
+\bibitem{sun2010hyperspectral}
+Da-Wen Sun.
+\newblock {\em Hyperspectral imaging for food quality analysis and control}.
+\newblock Elsevier, 2010.
+
+\bibitem{surhone2010stefan}
+L.M. Surhone, M.T. Timpledon, and S.F. Marseken.
+\newblock {\em Stefan-Boltzmann Law: Stefan-Boltzmann Law, Black Body, Irradiance, Thermodynamic Temperature, Ultraviolet Catastrophe, History of Quantum Mechanics, Thermodynamics}.
+\newblock Betascript Publishing, 2010.
+
+\bibitem{Thambawita_2022}
+Vajira Thambawita, Pegah Salehi, Sajad~Amouei Sheshkal, Steven~A. Hicks, Hugo~L. Hammer, Sravanthi Parasa, Thomas de Lange, P{\aa}l Halvorsen, and Michael~A. Riegler.
+\newblock {SinGAN}-seg: Synthetic training data generation for medical image segmentation.
+\newblock {\em {PLOS} {ONE}}, 17(5):e0267976, may 2022.
+
+\bibitem{ulyanov2016instance}
+Dmitry Ulyanov, Andrea Vedaldi, and Victor Lempitsky.
+\newblock Instance normalization: The missing ingredient for fast stylization.
+\newblock {\em arXiv preprint arXiv:1607.08022}, 2016.
+
+\bibitem{vaswani2017attention}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan~N Gomez, {\L}ukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock {\em Advances in neural information processing systems}, 30, 2017.
+
+\bibitem{wang2007impact}
+Lingli Wang, Xiaoxiong Xiong, John~Jianhe Qu, Yong Xie, Xianjun Hao, and Nianzeng Che.
+\newblock Impact assessment of aqua modis band-to-band misregistration on snow index.
+\newblock {\em Journal of Applied Remote Sensing}, 1(1):013531, 2007.
+
+\bibitem{enwiki:1128338285}
+{Wikipedia contributors}.
+\newblock Black-body radiation --- {Wikipedia}{,} the free encyclopedia.
+\newblock \url{https://en.wikipedia.org/w/index.php?title=Black-body_radiation&oldid=1128338285}, 2022.
+\newblock [Online; accessed 6-January-2023].
+
+\bibitem{williams2006landsat}
+Darrel~L Williams, Samuel Goward, and Terry Arvidson.
+\newblock Landsat.
+\newblock {\em Photogrammetric Engineering \& Remote Sensing}, 72(10):1171--1178, 2006.
+
+\bibitem{yang2018mri}
+Qianye Yang, Nannan Li, Zixu Zhao, Xingyu Fan, Eric~I Chang, Yan Xu, et~al.
+\newblock Mri cross-modality neuroimage-to-neuroimage translation.
+\newblock {\em arXiv preprint arXiv:1801.06940}, 2018.
+
+\bibitem{yi2017dualgan}
+Zili Yi, Hao Zhang, Ping Tan, and Minglun Gong.
+\newblock Dualgan: Unsupervised dual learning for image-to-image translation.
+\newblock In {\em Proceedings of the IEEE international conference on computer vision}, pages 2849--2857, 2017.
+
+\bibitem{yuan2018unsupervised}
+Yuan Yuan, Siyuan Liu, Jiawei Zhang, Yongbing Zhang, Chao Dong, and Liang Lin.
+\newblock Unsupervised image super-resolution using cycle-in-cycle generative adversarial networks.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops}, pages 701--710, 2018.
+
+\bibitem{zhang2017real}
+Richard Zhang, Jun-Yan Zhu, Phillip Isola, Xinyang Geng, Angela~S Lin, Tianhe Yu, and Alexei~A Efros.
+\newblock Real-time user-guided image colorization with learned deep priors.
+\newblock {\em arXiv preprint arXiv:1705.02999}, 2017.
+
+\bibitem{zhang2019multiple}
+Yongbing Zhang, Siyuan Liu, Chao Dong, Xinfeng Zhang, and Yuan Yuan.
+\newblock Multiple cycle-in-cycle generative adversarial networks for unsupervised image super-resolution.
+\newblock {\em IEEE transactions on Image Processing}, 29:1101--1112, 2019.
+
+\bibitem{zhao2021unpaired}
+Yang Zhao and Changyou Chen.
+\newblock Unpaired image-to-image translation via latent energy transport.
+\newblock In {\em Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pages 16418--16427, 2021.
+
+\bibitem{zhao2020unpaired}
+Yihao Zhao, Ruihai Wu, and Hao Dong.
+\newblock Unpaired image-to-image translation using adversarial consistency loss.
+\newblock In {\em European Conference on Computer Vision}, pages 800--815. Springer, 2020.
+
+\bibitem{zheng2021spatially}
+Chuanxia Zheng, Tat-Jen Cham, and Jianfei Cai.
+\newblock The spatially-correlative loss for various image translation tasks.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages 16407--16417, 2021.
+
+\bibitem{Zhou1988ComputationOO}
+Yi-Tong Zhou and Rama Chellappa.
+\newblock Computation of optical flow using a neural network.
+\newblock {\em IEEE 1988 International Conference on Neural Networks}, pages 71--78 vol.2, 1988.
+
+\bibitem{CycleGAN2017}
+Jun-Yan Zhu, Taesung Park, Phillip Isola, and Alexei~A Efros.
+\newblock Unpaired image-to-image translation using cycle-consistent adversarial networks.
+\newblock In {\em Computer Vision (ICCV), 2017 IEEE International Conference on}, 2017.
+
+\end{thebibliography}

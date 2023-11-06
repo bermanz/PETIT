@@ -1,0 +1,110 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Based on the "TASS-2018-Presentation" template
+%% (https://github.com/blackzaku/TASS-2018-Presentation)
+%%
+%% Adapted by Jose Pérez Cano, October 2022
+%% (joseperez2000@hotmail.es)
+%%
+%% Last update: 02/10/2022 (English Support)
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+
+\documentclass{beamer} 
+\usepackage{babel}
+\usepackage{caption}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{epstopdf}
+\usepackage{graphicx}
+\usepackage{soul}
+\usepackage[utf8]{inputenc}
+
+\usepackage{hyperref}
+\usepackage{xstring}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{relsize}
+
+\graphicspath{{./images/}}
+
+
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{naturalnames}{hyperref}
+% \captionsetup[table]{font=scriptsize}
+
+\usepackage{booktabs}
+\usepackage{lmodern}
+\usepackage{appendixnumberbeamer}
+
+%%
+% load layout
+\usepackage{theme}
+\setUPCLayout{draft,newlogo}
+
+\logo{\AddToShipoutPictureFG{
+  \AtPageMyLowerRight{{\includegraphics[height=1.5cm,keepaspectratio]{\smalllogovolcani}}}
+  \AtPageMyLowerLeft{{\includegraphics[height=1cm,keepaspectratio]{\logotlv}}}
+}}
+
+
+%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Title page
+\input{title.tex}
+
+% Table of Contents
+\begin{frame}[plain, noframenumbering]{Contents}
+  \tableofcontents
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   BODY
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+\label{sec:introduction}
+\input{introduction.tex}
+
+\section{Proposed Methods}
+\label{sec:methods}
+\input{methods.tex}
+
+\section{Results}
+\label{sec:results}
+\input{results.tex}
+
+\section{Conclusions}
+\label{sec:conclusions}
+\input{conclusions.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   CLOSING
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Questions}
+\begin{frame}[plain, noframenumbering]{Questions}
+  \centering\scalebox{15}{?}
+\end{frame}
+
+\begin{frame}[plain, noframenumbering, allowframebreaks]{References}
+  \bibliographystyle{apalike}
+  \bibliography{../bib.bib}
+\end{frame}
+
+\appendix
+\section*{Appendix}
+\input{appendix.tex}
+
+
+\end{document}

@@ -1,0 +1,23 @@
+\begin{thebibliography}{}
+
+\bibitem[Heusel et~al., 2017]{DBLP:journals/corr/HeuselRUNKH17}
+Heusel, M., Ramsauer, H., Unterthiner, T., Nessler, B., Klambauer, G., and Hochreiter, S. (2017).
+\newblock Gans trained by a two time-scale update rule converge to a nash equilibrium.
+\newblock {\em CoRR}, abs/1706.08500.
+
+\bibitem[Nugent et~al., 2013]{10.1117/1.OE.52.6.061304}
+Nugent, P.~W., Shaw, J.~A., and Pust, N.~J. (2013).
+\newblock {Correcting for focal-plane-array temperature dependence in microbolometer infrared cameras lacking thermal stabilization}.
+\newblock {\em Optical Engineering}, 52(6):1 -- 8.
+
+\bibitem[Park et~al., 2020]{park2020cut}
+Park, T., Efros, A.~A., Zhang, R., and Zhu, J.-Y. (2020).
+\newblock Contrastive learning for unpaired image-to-image translation.
+\newblock In {\em European Conference on Computer Vision}.
+
+\bibitem[Zhu et~al., 2017]{CycleGAN2017}
+Zhu, J.-Y., Park, T., Isola, P., and Efros, A.~A. (2017).
+\newblock Unpaired image-to-image translation using cycle-consistent adversarial networks.
+\newblock In {\em Computer Vision (ICCV), 2017 IEEE International Conference on}.
+
+\end{thebibliography}

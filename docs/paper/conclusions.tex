@@ -1,0 +1,15 @@
+In this paper, we propose a novel method that takes advantage of the unique physical properties of our data domain to improve the performance of a generative model in an unpaired inter-modal translation task. 
+Statistical analysis revealed a significant improvement in both performance and robustness with our approach.
+In particular, the significant contribution to both performance and robustness appears to be due to the fusion of a calibrated physical estimator with a deep generative architecture. 
+This observation supports our hypothesis regarding the added value of a physically estimated prior information to a deep-generative model in generating more realistic outputs.
+The improved robustness might also indicate that the physical prior guides the deep model's convergence toward flatter minima. 
+While the physical model enhancement was demonstrated for the backbones of CycleGAN and CUT, there is no limitation tying it to those specific models.
+Therefore, out method could in principle be harnessed to any type of generative architecture to improve its performance and robustness.
+
+As in every work, our study leaves room for improvement and further investigation.
+While sufficiently helpful for improving the deep estimator results, any improvement in the calibration process or in the physical modeling could potentially improve our physical estimator's prediction and provide the deep estimator with a better initial approximation of the desired output.
+Another issue that requires investigation is the redundancy of the intrinsic temperature in the absence of the physical estimator.
+
+Lastly, as mentioned in the methods section, our method is designed to transform an image from the panchromatic modality to a single monochromatic modality.
+By repeating the process for other monochromatic channels, a complete thermal multispectral dataset can be synthesized.
+Furthermore, instead of a single monochromatic target modality, our approach could be extended to apply multi-modal translation, \ie, from panchromatic to several monochromatic modalities simultaneously, resulting in a complete multi-spectral transformation.
