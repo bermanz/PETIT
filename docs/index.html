@@ -56,18 +56,29 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://www.linkedin.com/in/omri-berman/" target="_blank">Omri Berman</a>
+                <a href="https://www.linkedin.com/in/omri-berman/" target="_blank">Omri Berman</a><sup>1,2</sup>,
               </span>
                 <span class="author-block">
-                  <a href="https://www.linkedin.com/in/navot-o-9aa646189/" target="_blank">Navot Oz</a>
+                  <a href="https://www.linkedin.com/in/navot-o-9aa646189/" target="_blank">Navot Oz</a><sup>1,2</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://www.linkedin.com/in/davidmendlovic/" target="_blank">David Mendlovic</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://www.linkedin.com/in/nir-sochen-9879521b/" target="_blank">Nir Sochen</a><sup>1</sup>,
                 </span>
                   <span class="author-block">
-                    <a href="https://www.linkedin.com/in/iftach-klapp-06940527/" target="_blank">Iftach Klapp</a>
+                    <a href="https://www.agri.gov.il/people/710.aspx" target="_blank">Yafit Cohen</a><sup>2</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://www.linkedin.com/in/iftach-klapp-06940527/" target="_blank">Iftach Klapp</a><sup>2</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Tel Aviv University & Volcani Institute<br>WACV 2024</span>
+                    <sup>1</sup><span class="author-block">Tel Aviv University</span><br>
+                    <sup>2</sup><span class="author-block">Volcani Institute</span><br><br>
+                    <img src="figs/logos/WACV-Logo_2024.png" alt="Description of the image" id="tree" style="width: 20%;">
                   </div>
 
                   <div class="column has-text-centered">
@@ -120,7 +131,7 @@
       <img src="figs/methods/results_comp_ps.png" alt="Description of the image" id="tree" height="100%">
     </img>
       <h2 class="subtitle has-text-centered">
-        Description of Images. 
+        Our Method Compared to the baseline SOTA methods: (a) Panchromatic (Pan) input. (b) CycleGAN output. (c) CUT output. (d) PETIT output. (e) Real unpaired monochromatic image (Mono) for reference.
       </h2>
     </div>
   </div>
@@ -142,8 +153,7 @@
             Nevertheless, some data domains, and particularly the thermal domain, have unique properties that tie the input to the output that could help mitigate those weaknesses.
             We propose PETIT-GAN, a physically enhanced thermal image-translating generative adversarial network to transform between different thermal modalities - a step toward synthesizing a complete thermal multispectral dataset.
             Our novel approach embeds physically modeled prior information in an UI2I translation to produce outputs with greater fidelity to the target modality.
-            We further show that our solution outperforms the current state-of-the-art architectures at thermal UI2I translation by approximately $50\%$ with respect to the standard perceptual metrics, and enjoys a more robust training procedure.
-            The code and data used for the development and analysis of our method are publicly available and can be accessed through our project's website: \href{https://bermanz.github.io/PETIT}{https://bermanz.github.io/PETIT}
+            We further show that our solution outperforms the current state-of-the-art architectures at thermal UI2I translation by approximately 50% with respect to the standard perceptual metrics, and enjoys a more robust training procedure.
           </p>
         </div>
       </div>
@@ -151,6 +161,49 @@
   </div>
 </section>
 <!-- End paper abstract -->
+
+<!-- Methods -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <embed src="figs/network/src/petit.pdf" width="100%" height="100%" type="application/pdf">
+        <!-- <img src="figs/network/src/petit.pdf" alt="MY ALT TEXT"/> -->
+        <h2 class="subtitle has-text-centered">
+          Our method combines a calibrated polynomial physical estimator with a deep generator of a generative adversarial network (GAN) to transform 
+          a panchromatic (wide-band) thermal image into a content-equivalent monochromatic (narrow-band) thermal image.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="figs/network/src/cut.pdf" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Our deep generator's architecture is based on that of CycleGAN and CUT, two SOTA models for unpaired image to image (UI2I) translation.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="figs/methods/calib_setup.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         To calibrate our physical estimator, we designed an in-house calibration setup: The black body target (d) is observed by the thermal camera (b) through 
+         a drilled aperture (c) at the edge of the environmental chamber (a).
+       </h2>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="figs/methods/physical_model_tight.pdf" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        An illustration of a single thermal pixel's model physical coefficient's extraction, using 2-variate polynomial fitting and least-squares minimization criterion.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End Methods -->
+
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
