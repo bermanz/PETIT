@@ -1,17 +1,10 @@
+# <center> PETIT-GAN: Physically Enhanced Thermal Image-Translating Generative Adversarial Network</center>
+## <center>In WACV 2024</center>
 
-
-# <p style="text-align: center;">PETIT-GAN: Physically Enhanced Thermal Image-Translating Generative Adversarial Network</p>
-### <p style="text-align: center;">In WACV 2024</p>
-### <p style="text-align: center;">[code](https://github.com/bermanz/PETIT) |   [paper](TODO) |   [dataset](TODO)</p>
+### [Code](https://github.com/bermanz/PETIT) | [Paper](TODO) | [Dataset](TODO)
 <br>
-<img 
-    style="display: block; 
-           margin-left: auto;
-           margin-right: auto;
-           /* width: 30%;" */
-    src='figs/methods/results_comp_ps.png' align="center" width=960>
-</img>
 
+![Image Alt Text](figs/methods/results_comp_ps.png)
 <br>
 
 # Abstract 
