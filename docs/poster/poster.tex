@@ -56,7 +56,7 @@
 % ====================
 
 \footercontent{
-  \href{https://github.com/bermanz/PETIT}{\textbf{Project Website: https://github.com/bermanz/PETIT}} \hfill
+  \href{https://bermanz.github.io/PETIT/}{\textbf{Website: https://bermanz.github.io/PETIT}} \hfill
   \href{omriberman@mail.tau.ac.il}{\textbf{Contact: omriberman@mail.tau.ac.il}}}
 % (can be left out to remove footer)
 
@@ -138,6 +138,8 @@
 % --------------------- 2nd column ---------------------
 \begin{column}{\colwidth}
 
+  \centering\includegraphics[width=0.75\linewidth]{../figs/logos/WACV-Logo_2024_dgreen.png}
+  \vspace{0.85cm}
   \begin{alertblock}{Method}
 
     \begin{itemize} 
@@ -157,7 +159,7 @@
         The two transformations are cascaded to get a complete panchromatic to monochromatic UI2I model.
         \begin{figure}
             \centering
-            \includegraphics[width=0.5\textwidth]{../figs/methods/physical_model_tight.png}
+            \includegraphics[width=0.75\textwidth]{../figs/methods/physical_model_tight.png}
             % \caption{Calibrated model coefficients Illustration}
         \end{figure}
     
@@ -166,7 +168,7 @@
       %   \centering
       %   \includegraphics[width=0.9\textwidth]{../figs/methods/calib_setup.jpg}
       %   \caption{Calibration setup}
-      % \end{figure}    
+      % \end{figure}
       \item \textbf{PETIT}\linebreak\linebreak
         Our physical UI2I model is fused with a deep generative adversarial network (GAN) generator, who's architecture is based on those of CycleGAN \cite{CycleGAN2017} and CUT \cite{park2020cut}.
         \begin{figure}

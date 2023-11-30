@@ -2,7 +2,8 @@
 
 \bibitem{10.1117/1.OE.52.6.061304}
 Paul~W. Nugent, Joseph~A. Shaw, and Nathan~J. Pust.
-\newblock {Correcting for focal-plane-array temperature dependence in microbolometer infrared cameras lacking thermal stabilization}.
+\newblock {Correcting for focal-plane-array temperature dependence in
+  microbolometer infrared cameras lacking thermal stabilization}.
 \newblock {\em Optical Engineering}, 52(6):1 -- 8, 2013.
 
 \bibitem{park2020cut}
@@ -12,7 +13,9 @@ Taesung Park, Alexei~A. Efros, Richard Zhang, and Jun-Yan Zhu.
 
 \bibitem{CycleGAN2017}
 Jun-Yan Zhu, Taesung Park, Phillip Isola, and Alexei~A Efros.
-\newblock Unpaired image-to-image translation using cycle-consistent adversarial networks.
-\newblock In {\em Computer Vision (ICCV), 2017 IEEE International Conference on}, 2017.
+\newblock Unpaired image-to-image translation using cycle-consistent
+  adversarial networks.
+\newblock In {\em Computer Vision (ICCV), 2017 IEEE International Conference
+  on}, 2017.
 
 \end{thebibliography}
