@@ -89,7 +89,9 @@
   \begin{block}{Introduction}
     Thermal multispectral imagery is imperative for a plethora of environmental applications.
     Unfortunately, there are no publicly-available datasets of thermal multispectral images with a high spatial resolution that would enable the development of algorithms and systems in this field.    
-    To tackle this issue, we combined a physically modeled prior information an unpaired image-to-image (UI2I) translation model to produce synthetic multispectral thermal images.
+    To tackle this issue, we designed a narrow-band (monochromatic) thermal image generator, conditioned on a wide-band (panchromatic) input image.
+    % Due to the nature of our data, the generator was implemented as an unpaired image-to-image (UI2I) translation model.
+    We further augmented the model with physically modeled prior information to improve the model's training stability and increase its output's fidelity.
     Our contributions are:
     \begin{itemize}
       \item Introduction of a novel thermal aerial images dataset with unpaired images of different spectral bands.
@@ -100,7 +102,7 @@
 
   \begin{block}{Thermal Aerial Multispectral Dataset}
 
-    We collected the multispectral data for training our model using a lightweight airplane, 2000 meters above ground.
+    The data for training our model was collected using a lightweight airplane, 2000 meters above ground.
     The plane conducted several flights, each with some IR filter (monochromatic) or without (panchromatic).
     \begin{figure}
       \centering
@@ -110,7 +112,7 @@
     Due to the nature of flight conditions, data collected for each channel is inherently unpaired to the others, which led us toward developing an UI2I solution.    
   \end{block}
 
-  \begin{exampleblock}{Mathematical background}
+  \begin{exampleblock}{Physical background}
     \begin{itemize}
       \item \emph{Blackbody Radiation}: electromagnetic emission of an ideal opaque object due to its temperature, described by the Stephan-Boltzmann equation:
             \begin{equation*} \label{eq:stephan-boltzmann-ideal}
@@ -120,7 +122,7 @@
             %   \centering
             %   \includegraphics[width=0.3\linewidth]{../figs/methods/planck.png}
             % \end{figure}
-      \item In practical thermal imaging, the image intensity depends on the both the object's temperature ($T_\mathit{obj}$) and the camera's intrinsic temperature ($T_\mathit{int}$). 
+      \item Thermal image intensity depends on the both the object's temperature ($T_\mathit{obj}$) and the camera's intrinsic temperature ($T_\mathit{int}$). 
             Nugent et al. \cite{10.1117/1.OE.52.6.061304} suggested 3rd order polynomials for the dependency in the ambient temperature:
             \begin{equation*} \label{eq:IntensityVsTemperatures}
               \begin{split}            
