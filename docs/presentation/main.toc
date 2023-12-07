@@ -1,8 +1,8 @@
 \babel@toc {nil}{}\relax 
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{Proposed Methods}{9}{0}{2}
-\beamer@subsectionintoc {2}{1}{Deep Estimator}{11}{0}{2}
-\beamer@subsectionintoc {2}{2}{Physical Estimator}{14}{0}{2}
-\beamer@subsectionintoc {2}{3}{PETIT}{19}{0}{2}
-\beamer@sectionintoc {3}{Results}{22}{0}{3}
-\beamer@sectionintoc {4}{Conclusions}{25}{0}{4}
+\beamer@sectionintoc {2}{Proposed Methods}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{Deep Estimator}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{Physical Estimator}{11}{0}{2}
+\beamer@subsectionintoc {2}{3}{PETIT}{14}{0}{2}
+\beamer@sectionintoc {3}{Results}{16}{0}{3}
+\beamer@sectionintoc {4}{Conclusions}{19}{0}{4}
