@@ -31,9 +31,7 @@ class ThermalRegress:
         package = np if isinstance(t_bb, np.ndarray) else torch
         fpa = c2k(t_fpa.flatten())
         bb = c2k(t_bb.flatten()) ** 4
-        fpa_features = package.stack(
-            [fpa**2, fpa, package.ones_like(t_fpa.flatten())]
-        )
+        fpa_features = package.stack([fpa**2, fpa, package.ones_like(t_fpa.flatten())])
         bb_features = bb * fpa_features
         features_mat = package.stack((*bb_features, *fpa_features)).T
         return features_mat
@@ -114,7 +112,7 @@ class ThermalRegress:
                 fitted_plane_z.reshape(len(x_grid), -1),
                 alpha=0.5,
                 color="orange",
-                label=f"fitted surface",
+                label="fitted surface",
             )
 
             surf._facecolors2d = surf._facecolor3d
@@ -283,7 +281,7 @@ def comp_meas_profiles():
         "sawtooth": "$T_\mathit{int}$ ramp, $T_\mathit{obj}$ triangular",
         "random": "$T_\mathit{int}$ ramp, $T_\mathit{obj}$ random",
     }
-    x_val = load_measurements(Path(rf"physical_model\measurements\val"))
+    x_val = load_measurements(Path(r"physical_model\measurements\val"))
     val_err = {key: None for key in measurements_dict.keys()}
     _, ax = plt.subplots()
     err_statistics = pd.DataFrame(

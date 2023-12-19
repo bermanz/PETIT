@@ -1,12 +1,14 @@
-import torch
-from utils.deep import NetPhase
-from dataset import getDataLoader
-from tqdm import tqdm
 from functools import partial
+
 import numpy as np
+import torch
+from dataset import getDataLoader
+from inception import InceptionV3
 from scipy import linalg
 from torch.nn.functional import adaptive_avg_pool2d
-from inception import InceptionV3
+from tqdm import tqdm
+from utils.deep import NetPhase
+
 
 def get_pred(model, batch):
     pred = model(batch)[0]
@@ -119,7 +121,6 @@ def get_inceptionV3(dims=2048, device="cuda"):
 
 
 def get_fid_score(config, model, batch_size=10, inception_dims=2048):
-
     model.set_phase(NetPhase.test)
     set_loader = getDataLoader(
         config, NetPhase["test"], batch_size=batch_size

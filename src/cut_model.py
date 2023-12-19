@@ -1,20 +1,21 @@
 import logging
-from pathlib import Path
 import time
-from matplotlib import pyplot as plt
+from itertools import chain
+from pathlib import Path
+
+import networks
 import numpy as np
 import pandas as pd
+import seaborn as sns
 import torch
+import torchvision
+from base_model import BaseModel
+from matplotlib import pyplot as plt
+from patchnce import PatchNCELoss
+from torchvision import transforms
 from utils.arrays import tens2arr
 from utils.deep import NetPhase
 from utils.visualizations import add_text_to_image, full_dynamic_range
-from base_model import BaseModel
-import networks
-from patchnce import PatchNCELoss
-import torchvision
-from torchvision import transforms
-import seaborn as sns
-from itertools import chain
 
 
 class CUTModel(BaseModel):
@@ -371,8 +372,7 @@ class CUTModel(BaseModel):
         return self.visuals
 
     def save_res_log(self, target_dir: Path):
-        if not target_dir.is_dir():
-            make_nested_dir(target_dir)
+        target_dir.mkdir(parents=True, exist_ok=True)
         losses = self.loss_log[~(self.loss_log.isnull()).all(axis=1)]
         losses.to_excel(target_dir / "loss_log.xls")
 
@@ -392,5 +392,5 @@ class CUTModel(BaseModel):
         )
         grid.map_dataframe(sns.lineplot, x="Epoch", y="value")
         grid.add_legend()
-        grid.savefig(target_dir / f"losses.png")
+        grid.savefig(target_dir / "losses.png")
         plt.close()

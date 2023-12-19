@@ -6,8 +6,8 @@ We use the network architeture for our single-image traning setting.
 """
 
 import math
-import numpy as np
 
+import numpy as np
 import torch
 from torch import nn
 from torch.nn import functional as F
@@ -70,7 +70,6 @@ def upfirdn2d(input, kernel, up=1, down=1, pad=(0, 0)):
     return upfirdn2d_native(
         input, kernel, up, up, down, down, pad[0], pad[1], pad[0], pad[1]
     )
-
 
 
 def make_kernel(k):
@@ -351,7 +350,6 @@ class NoiseInjection(nn.Module):
         return image + self.weight * noise
 
 
-
 class StyledConv(nn.Module):
     def __init__(
         self,
@@ -390,7 +388,6 @@ class StyledConv(nn.Module):
         out = self.activate(out)
 
         return out
-
 
 
 class ConvLayer(nn.Sequential):
@@ -482,7 +479,9 @@ class ResBlock(nn.Module):
 
 
 class StyleGAN2Discriminator(nn.Module):
-    def __init__(self, input_nc, ndf=64, n_layers=3, no_antialias=False, size=None, config=None):
+    def __init__(
+        self, input_nc, ndf=64, n_layers=3, no_antialias=False, size=None, config=None
+    ):
         super().__init__()
         self.config = config
         if size is None:
@@ -550,11 +549,19 @@ class StyleGAN2Discriminator(nn.Module):
             )
 
     def forward(self, input):
-        if "patch" in self.config.network.netD and self.config.network.D_patch_size is not None:
+        if (
+            "patch" in self.config.network.netD
+            and self.config.network.D_patch_size is not None
+        ):
             h, w = input.size(2), input.size(3)
             y = torch.randint(h - self.config.network.D_patch_size, ())
             x = torch.randint(w - self.config.network.D_patch_size, ())
-            input = input[:, :, y : y + self.config.network.D_patch_size, x : x + self.config.network.D_patch_size]
+            input = input[
+                :,
+                :,
+                y : y + self.config.network.D_patch_size,
+                x : x + self.config.network.D_patch_size,
+            ]
         out = input
         for conv in self.convs:
             out = conv(out)

@@ -1,14 +1,13 @@
+import platform
+import sys
 from dataclasses import dataclass
 from enum import Enum, auto
-
-from utils.deep import NetPhase
-import numpy as np
-import platform
-from omegaconf import OmegaConf
-from hydra.core.config_store import ConfigStore
 from multiprocessing import cpu_count
 from pathlib import Path
-import sys
+
+import numpy as np
+from hydra.core.config_store import ConfigStore
+from utils.deep import NetPhase
 
 rgb2grey = np.array([0.2989, 0.587, 0.1141])
 TAU2_RAD_RES = 2**14  # TAU2's radiometric resolution
@@ -44,7 +43,6 @@ class RGB(Enum):
 
 
 class Domains(Enum):
-
     pan = auto()  # panchromatic
     mono = auto()
 
@@ -56,9 +54,7 @@ class InOutComb(Enum):
     none = auto()  # no combination
     addition = auto()  # apply addition between input and output
     hadamard = auto()  # apply hadamard multiplication between output and input
-    hadamard_bias = (
-        auto()
-    )  # apply hadamard multiplication between output 1st layer and input, and add to outputs 2nd layer
+    hadamard_bias = auto()  # apply hadamard multiplication between output 1st layer and input, and add to outputs 2nd layer
 
 
 class DataNorm(Enum):
@@ -192,9 +188,7 @@ class BaseConfig:
     gpu_ids: int = 0  # e.g. (0) \ (0,1,2). use -1 for CPU')
     verbose: bool = True  # if specified, print more debugging information
     load_iter: int = 0  # which iteration to load? if load_iter > 0, the code will load models by iter_[load_iter]. otherwise, the code will load models by [epoch]')
-    epoch: str = (
-        "best"  # which epoch to load? set to latest to use latest cached model
-    )
+    epoch: str = "best"  # which epoch to load? set to latest to use latest cached model
     is_random: bool = False  # if False, all numbers are generated using a default seed and all algorithms are deterministic
     network: Network = Network()
     data_loader: DataLoader = DataLoader()
@@ -215,6 +209,7 @@ class TrainConfig(BaseConfig):
     save_rate: SaveRate = SaveRate()
     use_regression_model: bool = False  # whether the network learns the residual from the classical colorization model's output or the complete output.
     # network.no_dropout = False TODO: uncomment to check how dropout affects training
+
 
 @dataclass(frozen=False)
 class TestConfig(BaseConfig):

@@ -1,14 +1,14 @@
-import os
-from pathlib import Path
-import torch
-from abc import ABC, abstractmethod
-from configs import LwirChannel
-
-from normalizer import Normalizer
-import networks
-from utils.deep import NetPhase
 import logging
+import os
+from abc import ABC, abstractmethod
+from pathlib import Path
+
+import networks
+import torch
+from configs import LwirChannel
+from normalizer import Normalizer
 from physical_model import PanToMono as PhysicalModel
+from utils.deep import NetPhase
 
 
 class BaseModel(ABC):
@@ -217,7 +217,7 @@ class BaseModel(ABC):
             epoch (int) -- current epoch; used in the file name '%s_net_%s.pth' % (epoch, name)
         """
         logger = logging.getLogger("PETIT")
-        logger.info(f"saving the model state")
+        logger.info("saving the model state")
 
         for sub_model in self.model_names:
             if isinstance(sub_model, str):

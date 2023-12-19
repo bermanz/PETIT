@@ -1,10 +1,10 @@
-from collections import Counter
 import json
-import numpy as np
-from tqdm import tqdm
-from configs import DataNorm, LwirChannel
-from configs import TAU2_RAD_RES
+from collections import Counter
 from pathlib import Path
+
+import numpy as np
+from configs import TAU2_RAD_RES, DataNorm, LwirChannel
+from tqdm import tqdm
 
 
 class Normalizer:
@@ -44,7 +44,9 @@ class Normalizer:
     def normalize(self, x):
         # the 4 factor due to common normalization (pytorch pre-trained models)
         if self.norm_method.name != DataNorm.const.name:
-            return ((x - self._data_offset) / self._data_scale) * self.scale + self.offset
+            return (
+                (x - self._data_offset) / self._data_scale
+            ) * self.scale + self.offset
         else:
             return x / TAU2_RAD_RES
 

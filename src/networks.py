@@ -1,11 +1,12 @@
+import functools
+
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch.nn import init
-import functools
-from torch.optim import lr_scheduler
-import numpy as np
 from stylegan_networks import StyleGAN2Discriminator, StyleGAN2Generator
+from torch.nn import init
+from torch.optim import lr_scheduler
 
 ###############################################################################
 # Helper Functions
@@ -1405,7 +1406,6 @@ class ResnetGenerator(nn.Module):
 
         mult = 2**n_downsampling
         for i in range(n_blocks):  # add ResNet blocks
-
             model += [
                 ResnetBlock(
                     ngf * mult,
@@ -1556,7 +1556,6 @@ class ResnetDecoder(nn.Module):
         n_downsampling = 2
         mult = 2**n_downsampling
         for i in range(n_blocks):  # add ResNet blocks
-
             model += [
                 ResnetBlock(
                     ngf * mult,
@@ -1684,7 +1683,6 @@ class ResnetEncoder(nn.Module):
 
         mult = 2**n_downsampling
         for i in range(n_blocks):  # add ResNet blocks
-
             model += [
                 ResnetBlock(
                     ngf * mult,
@@ -1956,7 +1954,6 @@ class NLayerDiscriminator(nn.Module):
         padding_type="reflect",
         no_antialias=False,
     ):
-
         """Construct a PatchGAN discriminator
 
         Parameters:
@@ -2101,7 +2098,6 @@ class PixelDiscriminator(nn.Module):
     def forward(self, input):
         """Standard forward."""
         return self.net(input)
-
 
 
 class GroupedChannelNorm(nn.Module):

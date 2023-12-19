@@ -1,19 +1,19 @@
-from pathlib import Path
-from matplotlib import pyplot as plt
-import pandas as pd
-import torch
 import itertools
+from collections import namedtuple
+from pathlib import Path
 
+import networks
+import pandas as pd
+import seaborn as sns
+import torch
+import torchvision
+from base_model import BaseModel
+from matplotlib import pyplot as plt
 from torch import nn
+from torchvision import transforms
 from utils.arrays import tens2arr
 from utils.deep import NetPhase
 from utils.visualizations import add_text_to_image, full_dynamic_range
-from base_model import BaseModel
-import networks
-from collections import namedtuple
-import torchvision
-from torchvision import transforms
-import seaborn as sns
 
 DiscOut = namedtuple("DiscOut", ["D_real", "D_fake"])
 DomainState = namedtuple("DomainState", ["real", "fake", "cycle", "identity"])
@@ -156,7 +156,6 @@ class CycleGANModel(BaseModel):
             self._forward(pan_fpa=None, mono_fpa=None)
 
     def calc_loss_G(self, freq: int = 1):
-
         lambda_idt = self.config.loss.lambda_identity
         lambda_GAN = self.config.loss.lambda_GAN
         lambda_GAN = self.config.loss.lambda_GAN
@@ -204,7 +203,6 @@ class CycleGANModel(BaseModel):
         self.iter_loss.loc[("mono", "identity")] = loss_mono_identity.item() * freq
 
     def calc_loss_D(self):
-
         loss_mono_D, pred_mono_real, pred_mono_fake = self.forward_D_basic(
             self.netD_mono, self.mono_real, self.mono_fake
         )
@@ -306,9 +304,9 @@ class CycleGANModel(BaseModel):
         losses_types = losses.keys().get_level_values(2).unique()
         domains = losses.keys().get_level_values(1).unique()
 
-        get_scalars = lambda domain, loss_type: losses.loc[
-            (pd.IndexSlice[:], domain, loss_type)
-        ]
+        def get_scalars(domain, loss_type):
+            return losses.loc[pd.IndexSlice[:], domain, loss_type]
+
         total_losses = {}
         for domain in domains:
             for loss_type in losses_types:
@@ -389,8 +387,7 @@ class CycleGANModel(BaseModel):
         return self.visuals
 
     def save_res_log(self, target_dir: Path):
-        if not target_dir.is_dir():
-            make_nested_dir(target_dir)
+        target_dir.mkdir(parents=True, exist_ok=True)
         losses = self.loss_log[~(self.loss_log.isnull()).all(axis=1)]
         losses.to_excel(target_dir / "loss_log.xls")
 

@@ -1,10 +1,13 @@
-from p_tqdm import t_map
+import datetime
+
 # from configs import AERIAL_RAW_PATH
 from pathlib import Path
-import pandas as pd
+from shutil import copyfile, rmtree
+
 import numpy as np
+import pandas as pd
+from p_tqdm import t_map
 from tqdm import tqdm
-import datetime
 
 AERIAL_RAW_PATH = Path(r"E:\Datasets\Aerial\flights_data\27_12_21")
 
@@ -12,8 +15,6 @@ AERIAL_RAW_PATH = Path(r"E:\Datasets\Aerial\flights_data\27_12_21")
 def get_img_from_frame(frame_path: Path):
     frame = np.load(frame_path)
     return frame["image"]
-
-
 
 
 def part_dataset(
@@ -74,13 +75,19 @@ def part_dataset(
     partition_log.to_csv(target_dir / f"partition_{str(datetime.date.today())}.csv")
 
 
-def copy_frames_for_dataset(src_dir, target_dir, partition_log):
-
+def copy_frames_for_dataset(src_dir: Path, target_dir: Path, partition_log):
     # Make directories for the dataset in case these aren't yet available:
+
     for subdir in ["train", "val", "test"]:
         phase_dir = target_dir / subdir
-        make_nested_dir(phase_dir)
-        clear_dir(phase_dir)
+        if phase_dir.is_dir():
+            for path in phase_dir.glob("**/*"):
+                if path.is_file():
+                    path.unlink()
+                elif path.is_dir():
+                    rmtree(path)
+        phase_dir.mkdir(parents=True, exist_ok=True)
+
     if (target_dir / "stats.json").is_file():
         (target_dir / "stats.json").unlink()
     wl = target_dir.stem
@@ -132,7 +139,9 @@ def get_latest_partition(base_dir: Path):
     return pd.read_csv(partitions[latest_date], index_col=0)
 
 
-def prep_dataset(base_dir: Path = Path(AERIAL_RAW_PATH / "flights_data" / "30_11_21")) -> None:
+def prep_dataset(
+    base_dir: Path = Path(AERIAL_RAW_PATH / "flights_data" / "30_11_21"),
+) -> None:
     """A function that combines all the necessary steps for creating the parsing the flight's raw data into valid frames for training.
 
     As a preliminary step, it is required to download the flight raw-data pkl files from the drive, and unzip them into a clean folder, who's path should be the input to the function.

@@ -1,11 +1,12 @@
 from multiprocessing import cpu_count
-import torch
-from torch.utils.data import Dataset
 from pathlib import Path
+
 import numpy as np
-from torchvision.transforms import ToTensor, Compose, CenterCrop
-from utils.deep import NetPhase
+import torch
 from configs import LwirChannel
+from torch.utils.data import Dataset
+from torchvision.transforms import CenterCrop, Compose, ToTensor
+from utils.deep import NetPhase
 
 
 def getDataLoader(
