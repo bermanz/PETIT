@@ -16,5 +16,5 @@ dependencies:
   - p-tqdm
   - omegaconf
   - pytorch
-  - pytorch-cuda=12.2
+  - pytorch-cuda=12.1
   - torchvision
