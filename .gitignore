@@ -1,3 +1,5 @@
 /venv/
 /models/
 /data/
+/results/
+__pycache__

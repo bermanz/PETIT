@@ -1,4 +1,4 @@
-name: PETIT_ICCV
+name: PETIT_WACV
 channels:
   - conda-forge
   - pytorch
@@ -16,5 +16,5 @@ dependencies:
   - p-tqdm
   - omegaconf
   - pytorch
-  - pytorch-cuda=11.7
+  - pytorch-cuda=12.2
   - torchvision
