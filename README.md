@@ -41,3 +41,17 @@ Run the file `train.ipynb` in the root directory of the repository.
 ## Inference
 Run the file `inference.ipynb` in the root directory of the repository.
 The notebook will produce a folder named `results/transformed/<CurrentTime>` containing `.png`/`.npy` files of the generated images, depending on the user's specification in the notebook.
+
+## Citation
+If you use PETIT-GAN's code/paper for your research, please cite using the following BibTex:
+
+```
+@InProceedings{Berman_2024_WACV,
+  author    = {Berman, Omri and Oz, Navot and Mendlovic, David and Sochen, Nir and Cohen, Yafit and Klapp, Iftach},
+  title     = {PETIT-GAN: Physically Enhanced Thermal Image-Translating Generative Adversarial Network},
+  booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  month     = {January},
+  year      = {2024},
+  pages     = {1618-1627}
+}
+```
