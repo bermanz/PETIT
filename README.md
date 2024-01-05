@@ -9,13 +9,11 @@ For more details about the research, please checkout our [project's website](htt
 ![PETIT](docs/figs/methods/results_comp_ps.png)  
 
 
-
-
 ## Setup
 - Install the required packages either using either:
     - conda (recommended): `conda env create -f environment.yml`.
     - pip : `pip install -r requirements.txt`.
-- Download the data and pretrained models from [here](https://drive.google.com/drive/folders/1gOGpCNSU7I7FVLerbRtN9z9LpBuuq3WN?usp=sharing)
+- Run the `download.py` script to download and unpack all the data and pretrained models. **_NOTE:_**  The data used here is a fraction of the entire dataset (both in terms of amounts of images and modalities). For the full data set, click [here](https://agropticslab.volcani.institute/PETIT-GAN/data).
 - Extract the folders in the downloaded zip to the root directory of the repository.
 - After completing the setup, the project's root should have the following structure:
 
@@ -25,12 +23,12 @@ For more details about the research, please checkout our [project's website](htt
 ├── models
 ├── src
 ├── .gitignore
+├── download.py
 ├── environment.yml
 ├── inference.ipynb
 ├── requirements.txt
 ├── train.ipynb
 ```
-
 
 ## Train
 Run the file `train.ipynb` in the root directory of the repository.
