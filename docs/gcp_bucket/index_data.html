@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your HTML Template</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #4285f4;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #1a0dab;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dataset</h1>
+    <p> This is the aerial-multi-spectral-thermal dataset involved in the paper 
+        <a href="https://openaccess.thecvf.com/content/WACV2024/html/Berman_PETIT-GAN_Physically_Enhanced_Thermal_Image-Translating_Generative_Adversarial_Network_WACV_2024_paper.html" target="_blank"><strong>PETIT-GAN</strong></a>,
+        which was published in WACV2024.
+        <br>
+        For more details about the research, please visit the <a href="https://bermanz.github.io/PETIT/" target="_blank">project's website</a>.
+        <br>
+        <br>
+        Each of the files below is a .zip file holding the entirety of the valid aerial frames acquired in that wavelength, as described in the research paper and supplementary material.
+        <br>
+    </p>
+    <ul>
+        <li>            
+            <a href="https://storage.googleapis.com/aro-agroptic-public/PETIT-GAN/data/pan.zip" target="_blank"><strong>Panchromatic</strong></a>
+        </li>
+        <li>            
+            <a href="https://storage.googleapis.com/aro-agroptic-public/PETIT-GAN/data/9000nm.zip" target="_blank"><strong>9000nm</strong></a>
+        </li>
+        <li>            
+            <a href="https://storage.googleapis.com/aro-agroptic-public/PETIT-GAN/data/11000nm.zip" target="_blank"><strong>11000nm</strong></a>
+        </li>
+        <li>            
+            <a href="https://storage.googleapis.com/aro-agroptic-public/PETIT-GAN/data/12000nm.zip" target="_blank"><strong>12000nm</strong></a>
+        </li>
+        <!-- Add more list items as needed -->
+    </ul>
+    <p>
+        Each frame is an independent numpy .npz file with the following fields:
+        <ul>
+            <li>            
+                <strong>image</strong>: a two-dimensional 256 x 336 Numpy array containing the radiometric intensities acquired by the Flir TAU2 camera (with 14-bit precision).
+            </li>
+            <li>            
+                <strong>time</strong>: the date and time of the acquired image in GMT.
+            </li>
+            <li>            
+                <strong>lat</strong>: the latitude of the plane at the time of acquisition.
+            </li>
+            <li>            
+                <strong>long</strong>: the longitude of the plane at the time of acquisition.
+            </li>
+            <li>            
+                <strong>alt</strong>: the altitude of the plane above sea-level at the time of acquisition (in meters).
+            </li>
+            <li>            
+                <strong>fpa</strong>: the intrinsic temperature of the camera as measured by the focal-plane array thermal sensor (in Celsius).
+            </li>
+        </ul>
+    </p>
+    <br><br>
+    
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@InProceedings{Berman_2024_WACV,
+  author    = {Berman, Omri and Oz, Navot and Mendlovic, David and Sochen, Nir and Cohen, Yafit and Klapp, Iftach},
+  title     = {PETIT-GAN: Physically Enhanced Thermal Image-Translating Generative Adversarial Network},
+  booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  month     = {January},
+  year      = {2024},
+  pages     = {1618-1627}
+}</code></pre>
+    </div>
+
+</body>
+</html>
